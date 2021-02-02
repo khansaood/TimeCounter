@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>StopWatch</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Time Counter</h2>
+        <div class="row zero">
+
+            <input class="input" type="text" placeholder="Minutes:" id="Min">
+            <input class="input" type="text" placeholder="Seconds:" id="Sec">
+        </div>
+
+
+        <div class="row second ">
+            <div class="col">
+                <button onclick="trie()" id="start">Start</button>
+            </div>
+            <div class="col" onclick="stop()"><button>Stop</button>
+            </div>
+            <div class="col" onclick="del()"><button>clear</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
